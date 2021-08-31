@@ -1,18 +1,18 @@
 app:
   name: Tomcat Loadgen
   code: TCLG
-  notify: appzdev@cloudbourne.co
-
+  notify: bkoshy@ecloudcontrol.com
+  
 build:
   version: 0.3
-  env: DEV
+  env: DEV1
   build_file: pom.xml
   output_files: output/*.war
   image_template: tomcat9
   image_name: alpha/tomcat9-helloworld
 
 deploy:
-  context: alpha/DEV
+  context: bibin-ecloudcontrol/DEV1
   replicas: 2
   port: 
    - 8080
