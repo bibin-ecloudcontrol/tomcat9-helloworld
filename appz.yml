@@ -9,11 +9,10 @@ build:
   build_file: pom.xml
   output_files: output/*.war
   image_template: tomcat9
-  image_name: alpha/tomcat9-helloworld
 
 deploy:
   context: bibin-ecloudcontrol/DEV
-  replicas: 2
+  replicas: 1
   port: 
    - 8080
 
